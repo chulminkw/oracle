@@ -1,0 +1,12 @@
+oewizard.bat -cl -create -cs "(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 34.64.246.96)(PORT = 1521)))
+(CONNECT_DATA =(SERVICE_NAME = ORCL)))" -u SOE_10G -p SOE_10G -scale 10 -tc 16 -dba "sys as sysdba" -dbap welcome1 -ts SOE_10G
+
+# option 설명
+-cs 는 connect string의미 tnsnames 설정 문자열 "(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 34.64.246.96)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = ORCL)))" 
+-u는 생성 유저: SOE_10G로 설정. 
+-p는 유저 패스워드: SOE_10G로 설정
+-scale은 생성 데이터 크기 계수: 10 즉 10G로 설정. 
+-tc는 동시 작업 접속수: 16
+-dba: sysdba 접속
+-dbap: sysdba 패스워드
+-ts: 생성한 테이블 스페이스 명. 
