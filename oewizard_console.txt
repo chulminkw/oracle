@@ -1,5 +1,4 @@
-oewizard.bat -cl -create -cs "(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 34.64.246.96)(PORT = 1521)))
-(CONNECT_DATA =(SERVICE_NAME = ORCL)))" -u SOE_10G -p SOE_10G -scale 10 -tc 16 -dba "sys as sysdba" -dbap welcome1 -ts SOE_10G
+oewizard.bat -cl -create -cs "(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 34.64.246.96)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = ORCL)))" -u SOE_10G -p SOE_10G -scale 10 -tc 16 -dba "sys as sysdba" -dbap welcome1 -ts SOE_10G
 
 # option 설명
 -cs 는 connect string의미 tnsnames 설정 문자열 "(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 34.64.246.96)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = ORCL)))" 
